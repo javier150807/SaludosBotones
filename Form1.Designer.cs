@@ -30,11 +30,12 @@ namespace SaludosBotones
         private void InitializeComponent()
         {
             this.btnJavier = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnJavier
             // 
-            this.btnJavier.Location = new System.Drawing.Point(305, 145);
+            this.btnJavier.Location = new System.Drawing.Point(168, 129);
             this.btnJavier.Name = "btnJavier";
             this.btnJavier.Size = new System.Drawing.Size(197, 140);
             this.btnJavier.TabIndex = 1;
@@ -42,11 +43,22 @@ namespace SaludosBotones
             this.btnJavier.UseVisualStyleBackColor = true;
             this.btnJavier.Click += new System.EventHandler(this.btnJavier_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(402, 129);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(197, 140);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Hola, soy Javier";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btnJavier_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnJavier);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -57,6 +69,7 @@ namespace SaludosBotones
         #endregion
 
         private System.Windows.Forms.Button btnJavier;
+        private System.Windows.Forms.Button button1;
     }
 }
 
